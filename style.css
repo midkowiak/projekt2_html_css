@@ -13,12 +13,14 @@ html {
   color: white;
 }
 .container {
-  width: 960px;
+  width: 96%;
   margin: 0 auto;
 }
 .nav-container {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
 .subpage-list {
   display: flex;
@@ -28,10 +30,16 @@ html {
   margin-left: 50px;
 }
 .header-class {
-  min-height: 100%;
-  background-image: url(mgla.jpg);
+  min-height: 100vh;
+  background-image: url(images/mgla.jpg);
   color: white;
   background-repeat: no-repeat;
+}
+.header-text {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .button-offer {
   background: rgba(254, 255, 255, 0.002);
@@ -39,17 +47,28 @@ html {
   color: white;
   width: 164px;
   height: 40.74px;
-  border: 1px;
+  border-color: white;
 }
-.circle {
+.circle-w {
+  aspect-ratio: 1;
   border-radius: 50%;
-  background-color: #4e4e4e;
+  background-image: url(images/kobieta.png);
   width: 10%;
   aspect-ratio: 1;
 }
-.grid-container {
+.circle-m {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-image: url(images/mezczyzna.png);
+  width: 10%;
+}
+.flex-container {
   background-color: #405d78;
   min-height: 100%;
+}
+.div-oferta {
+  padding: 10% 10%;
+  box-sizing: border-box;
 }
 .footer-container {
   background-color: #4e4e4e;
