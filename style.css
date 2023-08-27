@@ -1,0 +1,63 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+.subtitle {
+  color: white;
+}
+.subtitle-grey {
+  color: #405d78;
+}
+.navigation {
+  background-color: gray;
+  height: 50px;
+  color: white;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.subpage-list {
+  display: flex;
+  list-style: none;
+}
+.menu-list {
+  margin-left: 50px;
+}
+.header-class {
+  min-height: 100%;
+  background-image: url(mgla.jpg);
+  color: white;
+  background-repeat: no-repeat;
+}
+.button-offer {
+  background: rgba(254, 255, 255, 0.002);
+  font-size: small;
+  color: white;
+  width: 164px;
+  height: 40.74px;
+  border: 1px;
+}
+.circle {
+  border-radius: 50%;
+  background-color: #4e4e4e;
+  width: 10%;
+  aspect-ratio: 1;
+}
+.grid-container {
+  background-color: #405d78;
+  min-height: 100%;
+}
+.footer-container {
+  background-color: #4e4e4e;
+  height: 71px;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
