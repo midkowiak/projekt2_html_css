@@ -22,38 +22,41 @@
       <div class="container nav-container">
         <p>moja firma</p>
         <ul class="subpage-list">
-          <li class="menu-list">o nas</li>
-          <li class="menu-list">oferta</li>
-          <li class="menu-list">kontakt</li>
+          <li class="menu-list active about"><a href="#about"></a>o nas</li>
+          <li class="menu-list active offer"><a href="#offer"></a>oferta</li>
+          <li class="menu-list not-allowed">kontakt</li>
         </ul>
       </div>
     </nav>
-    <header class="header-class">
+    <header class="header-class header-container">
       <div class="container">
         <div class="header-text">
-          <h1>Nasza firma oferuje najwyższej jakości produkty.</h1>
-          <h3>Nie wierz nam na słowo - sprawdź</h3>
-          <button class="button-offer">oferta</button>
+          <h1>Nasza firma oferuje najwyższej<br />jakości produkty.</h1>
+          <h3 class="subtitle-margin">Nie wierz nam na słowo - sprawdź</h3>
+          <button class="button-offer custom-button custom-button:hover">
+            <a href="#offer"></a>
+            oferta
+          </button>
         </div>
       </div>
     </header>
     <section>
       <div class="container">
-        <h2 class="subtitle-grey">Nasi specjaliści</h2>
+        <h2 id="about" class="subtitle-grey">Nasi specjaliści</h2>
+        <div class="container container-worker">
+          <div class="circle circle-w"></div>
+          <div>
+            <h3 class="subtitle-workers">Imię i Nazwisko (Dział)</h3>
+            <p class="worker-desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              laudantium praesentium distinctio suscipit repellat tenetur quas
+              ipsa delectus pariatur quae nobis ullam doloribus dolorem, aliquam
+              enim autem illo ad illum?
+            </p>
+          </div>
+        </div>
         <div class="container-worker">
-          <div class="circle-w"></div>
-          <div>
-            <h3 class="subtitle-workers">Imię i Nazwisko (Dział)</h3>
-            <p class="worker-desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-              laudantium praesentium distinctio suscipit repellat tenetur quas
-              ipsa delectus pariatur quae nobis ullam doloribus dolorem, aliquam
-              enim autem illo ad illum?
-            </p>
-          </div>
-        </div>
-        <div class="container worker">
-          <div class="circle-m"></div>
+          <div class="circle circle-m"></div>
           <div>
             <h3 class="subtitle-workers">Imię i Nazwisko (Dział)</h3>
             <p class="worker-desc">
@@ -66,22 +69,30 @@
         </div>
       </div>
     </section>
-    <section class="flex-container">
-      <div class="container">
-        <h3 class="subtitle">Czym zajmuje się nasza firma?</h3>
-        <div class="div-oferta">Usługa 1 (nowość)</div>
-        <div class="div-oferta">Usługa 2</div>
-        <div class="div-oferta">Usługa 3</div>
-        <div class="div-oferta">Usługa 4</div>
-        <div class="div-oferta">Usługa 5</div>
-        <div class="div-oferta">Usługa 6</div>
+    <section id="offer" class="offer-container">
+      <h3 class="subtitle">Czym zajmuje się nasza firma?</h3>
+      <div class="container flex-container">
+        <div class="service-container">
+          <div class="div-offer">Usługa 1 (nowość)</div>
+          <div class="div-offer">Usługa 2</div>
+          <div class="div-offer">Usługa 3</div>
+        </div>
+        <div class="container-service">
+          <div class="div-offer">Usługa 4</div>
+          <div class="div-offer">Usługa 5</div>
+          <div class="div-offer">Usługa 6</div>
+        </div>
       </div>
     </section>
-    <footer class="footer-container">
+    <footer id="contact" class="footer-container">
       <div class="container">
         <p class="footer-subtitle">
           Nazwa firmy - wszelkie prawa zastrzeżone, 2019
         </p>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
     </footer>
   </body>
