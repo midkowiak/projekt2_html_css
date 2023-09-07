@@ -13,6 +13,9 @@ html {
   height: 50px;
   color: white;
 }
+.container-worker {
+  width: 100%;
+}
 .container {
   width: 96%;
   margin: 0 auto;
@@ -26,9 +29,13 @@ html {
 }
 .subpage-list {
   display: none;
+  justify-content: space-between;
+  height: 100%;
 }
 .menu-list {
-  margin-left: 50px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .active {
   font-weight: bold;
@@ -79,14 +86,6 @@ html {
   background-color: #fff;
   color: #000;
 }
-.container-worker {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%;
-  flex-wrap: wrap;
-}
 .container-worker:nth-child(odd) {
   order: 1;
 }
@@ -124,6 +123,12 @@ html {
   display: inline-block;
   margin: 20px;
   margin-left: 10px;
+}
+.orange-dot {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
 }
 .footer-container {
   background-color: #4e4e4e;
