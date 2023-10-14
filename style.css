@@ -142,6 +142,7 @@ html {
   align-items: center;
   flex-direction: column;
   position: relative;
+  transition: 0.5s;
 }
 .description-offer {
   font-size: 24px;
@@ -180,5 +181,8 @@ html {
   .button-offer:hover {
     background-color: #fff;
     color: #000;
+  }
+  .boxes-offer:hover {
+    transform: scale(1.05);
   }
 }
